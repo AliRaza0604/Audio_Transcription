@@ -32,7 +32,6 @@ Structured JSON Response
 | FastAPI | REST API framework |
 | Faster-Whisper | Speech-to-text transcription engine |
 | FFmpeg | Audio preprocessing and format conversion |
-| Redis / Celery | Background task processing |
 | Streamlit | Simple frontend UI |
 
 ---
@@ -217,7 +216,7 @@ project/
 ## 1. Clone Repository
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/AliRaza0604/Audio_Transcription
 cd project
 ```
 
@@ -259,7 +258,7 @@ ffmpeg -version
 # Running the Backend
 
 ```bash
-uvicorn app:app --reload
+uvicorn server:app --reload
 ```
 
 Backend API will run at:
@@ -273,7 +272,7 @@ http://127.0.0.1:8000
 # Running the Streamlit UI
 
 ```bash
-streamlit run ui.py
+streamlit run frontend.py
 ```
 
 Frontend UI will run at:
@@ -307,7 +306,3 @@ http://127.0.0.1:8000/docs
 - Production-oriented system design
 
 ---
-
-# Notes
-
-This implementation focuses primarily on engineering design, scalability, modularity, and production-readiness rather than custom model training. The architecture is intentionally designed to support future improvements such as asynchronous processing, distributed workers, speaker diarization, and real-time transcription pipelines.
