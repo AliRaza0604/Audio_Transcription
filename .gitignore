@@ -1,0 +1,12 @@
+transcription_server_env/
+uploads/
+processed/
+wav/
+
+__pycache__/
+*.pyc
+.env
+
+# Ignore audio files
+*.wav
+*.mp3
